@@ -1,0 +1,48 @@
+/*---------------------------------------------- utilitysection---------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------------------- Start header------------------------------------------ */
+nav{
+    width: 100%;
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.nav-logo{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.nav-logo span{
+    padding-left: 10px;
+}
+.nav-logo img{
+    width: 40.42px;
+    Height: 51px;
+}
+.nav-profile{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center; 
+}
+.nav-profile a{
+    text-decoration: none;
+    padding-right: 27px;
+    color: white;
+}
+.nav-profile img{
+    width: 51px;
+    height: 51px;
+}
+/*-------------------------------------  Start media query for nav------------------------------------- */
+ @media only screen and (max-width:688px){ 
+    nav{
+        width: 100%;
+    }
+}
