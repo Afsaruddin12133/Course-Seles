@@ -202,6 +202,9 @@ nav{
         grid-template-columns: 1fr;
       
     }
+    .instuctore-and-articale{
+        width: 90%;
+    }
     .articales{
         display: grid;
         grid-template-columns: 1fr;
