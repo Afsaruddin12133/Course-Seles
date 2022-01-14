@@ -121,10 +121,73 @@ nav{
 .articale img{
     width: 160px;
     height: 150px;
-}                 
+}    
+/*------------------------------------Start-Course-section-------------------------------------------*/    
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    padding: 0px 30px 0px 30px ;
+    padding-bottom: 22px;
+    
+    
+}
+.courses-section{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 21px;
+    width: 63%;
+}  
+.courses-section h2{
+    padding-top: 4px;
+    padding-left: 33px;
+    padding-bottom: 5px;
+    color: #562EFF;
+}
+.course img{
+    Width: 224px;
+    Height: 104px;
+}    
+.course{
+    text-align: center;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.07);
+    padding-bottom: 8px;
+    border-radius: 8px;
+}    
+.course-rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-top: 20px;
+}  
+#time-duration{
+    background-color: #ffb4bd65;
+    color: #FF4A60;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.fa-clock{
+    padding-right: 5px;
+}
+.fa-star{
+    color: #FFC014;
+    font-size: 12px;
+}
+#last-star{
+    color: #AEAEAE;
+}
+#number{
+    color:#AEAEAE;
+}
 /*-------------------------------------  Start media query for nav------------------------------------- */
  @media only screen and (max-width:500px){ 
-     nav{
+    
+    body{
+        width: 100%;
+    }
+    nav{
         width: 100%;
     } 
     .nav-logo span{
@@ -158,8 +221,35 @@ nav{
     .articale{
         grid-column-gap: 8px;
     }     
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .course img{
+        width: 200px;
+        height: 90px;
+    }
+    .course{
+        margin-bottom: 25px;
+    }
+    #time-duration{
+        font-size: 15px;
+        padding: 0;
+    }
+    #number{
+        font-size: 15px;
+    }
+    .fa-star{
+        font-size: 11px;
+    }
 }
 @media only screen and (max-width:960px){
+    body{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
     .articales{
         grid-column-gap: 30px;
     }
@@ -178,4 +268,94 @@ nav{
         width: 120px;
         height: 100px;
     }      
+    .courses{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .course{
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (max-width:1280px){
+    body{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:540px){
+    body{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .instructors{
+        display: grid;
+        grid-template-columns: 1fr;
+      
+    }
+    .articales{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+}
+@media only screen and (max-width:280px){
+    body{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    .nav-logo span{
+        padding-left: 5px;
+    }
+    .nav-profile{
+        margin-left: 10px;
+        grid-template-columns:repeat(3,50px) 1fr;
+    }
+    .nav-logo img{
+        width: 30px;
+        height: 30px;
+        margin-left: 8px;
+    }
+    .nav-logo span{
+        display: none;
+    }
+    .nav-profile img{
+        width: 60px;
+        height: 50px;
+        padding-right: 10px;
+    }
+    .articale{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .course img{
+        width: 130px;
+    }
+    .fa-star{
+        font-size: 7px;
+    }
+    .fa-clock{
+        font-size: 8px;
+    }
+    #number{
+        font-size: 12px;
+    }
+    #time-duration{
+        font-size: 10px;
+        padding: 0;
+        width: 40px;
+        margin-bottom: 10px;
+    }
 }
