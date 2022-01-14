@@ -223,7 +223,10 @@ nav{
     }  
     .articale{
         grid-column-gap: 8px;
-    }     
+    }   
+    .courses-section{
+        width: 90%;
+    }  
     .courses{
         display: grid;
         grid-template-columns: 1fr;
