@@ -4,7 +4,7 @@
 Repository: [GitHub Repository](https://github.com/Afsaruddin12133/Course-Seles)
 
 ## Live Demo
-Live Demo: [Project Live Link](https://afsaruddin12133.github.io/Course/)
+Live Demo: [Project Live Link](https://afsaruddin12133.github.io/Course-Seles/)
 
 ## Features
 - **Course Management:** Manage and showcase a variety of courses.
